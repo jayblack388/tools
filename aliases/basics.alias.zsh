@@ -32,10 +32,14 @@ alias find_nm="find . -name 'node_modules' -type d -prune -print | xargs du -chs
 alias flush='rm -rf node_modules yarn.lock package-lock.json .cache dist'
 # pipes working directory to clipboard
 alias pwd-copy='pwd | pbcopy'
-# starts redis in daemon
-alias redis='~/Documents/code/redis-6.0.9/src/redis-server --daemonize yes'
 # re-sources zshrc
 alias refresh='source ~/.zshrc'
+
+# docker aliases
+alias dcb="docker-compose build"
+alias dcbp="docker-compose build --pull"
+alias dcrm="docker-compose run --rm manage"
+alias dcu="docker-compose up"
 
 # git aliases
 alias grhard='git reset --hard HEAD'
